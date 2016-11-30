@@ -7,6 +7,7 @@ import armory.data.MeshData;
 import armory.data.MaterialData;
 import armory.system.Input;
 
+@:keep
 class BoxGenerator extends armory.Trait {
 
     var meshData:MeshData;
