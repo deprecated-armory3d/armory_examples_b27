@@ -19,7 +19,7 @@ class PrintFrame extends armory.Trait {
             lastTime = kha.Scheduler.realTime();
             totalTime += frameTime;
             frames++;
-#if js
+#if webgl
             if (totalTime >= 1) {
                 untyped document.title = Std.int(totalTime / frames * 10000) / 10 + ' ms/frame';
                 totalTime = 0;
