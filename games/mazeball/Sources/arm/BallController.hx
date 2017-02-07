@@ -19,9 +19,8 @@ class BallController extends Trait {
 		notifyOnInit(function() {
 			// Store reference to finish
 			finish = Scene.active.getChild("Finish");
+			notifyOnUpdate(update);
 		});
-
-		notifyOnUpdate(update);
 	}
 
 	function update() {
