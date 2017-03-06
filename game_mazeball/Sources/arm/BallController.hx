@@ -1,9 +1,9 @@
 package arm;
 
-import iron.Trait;
-import iron.Scene;
-import iron.object.Object;
-import iron.math.Vec4;
+import armory.Trait;
+import armory.Scene;
+import armory.object.Object;
+import armory.math.Vec4;
 import armory.trait.internal.RigidBody;
 
 @:keep
@@ -16,7 +16,7 @@ class BallController extends Trait {
 	public function new() {
 		super();
 
-		notifyOnInit(function() {
+		Scene.active.notifyOnInit(function() {
 			// Store reference to finish
 			finish = Scene.active.getChild("Finish");
 			notifyOnUpdate(update);
