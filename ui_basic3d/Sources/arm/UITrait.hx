@@ -62,7 +62,8 @@ class UITrait extends armory.Trait {
 
         // We need to figure out if user clicked on the UI plane
         // Get plane UV
-        var uv = iron.math.RayCaster.getPlaneUV(cast object, Input.x, Input.y, iron.Scene.active.camera);
+        var mouse = Input.getMouse();
+        var uv = iron.math.RayCaster.getPlaneUV(cast object, mouse.x, mouse.y, iron.Scene.active.camera);
         if (uv == null) return;
 
         // Pixel coords
@@ -70,8 +71,8 @@ class UITrait extends armory.Trait {
         var py = Std.int(uv.y * uiHeight);
 
         // Send input events
-        if (Input.started) ui.onMouseDown(0, px, py);
-        else if (Input.released) ui.onMouseUp(0, px, py);
-        if (Input.movementX != 0 || Input.movementY != 0) ui.onMouseMove(px, py, 0, 0);
+        if (mouse.started()) ui.onMouseDown(0, px, py);
+        else if (mouse.released()) ui.onMouseUp(0, px, py);
+        if (mouse.movementX != 0 || mouse.movementY != 0) ui.onMouseMove(px, py, 0, 0);
     }
 }

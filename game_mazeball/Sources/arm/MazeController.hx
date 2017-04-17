@@ -17,10 +17,11 @@ class MazeController extends Trait {
 	}
 
 	function update() {
-		if (Input.down) {
+		var mouse = Input.getMouse();
+		if (mouse.down()) {
 			// Rotate board with mouse
-			object.transform.rotate(new Vec4(0, 1, 0), Input.movementX / 300);
-			object.transform.rotate(object.transform.matrix.right(), Input.movementY / 600);
+			object.transform.rotate(new Vec4(0, 1, 0), mouse.movementX / 300);
+			object.transform.rotate(object.transform.matrix.right(), mouse.movementY / 600);
 			object.transform.buildMatrix();
 
 			// Reflect transform changes to rigid body
