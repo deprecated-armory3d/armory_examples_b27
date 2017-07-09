@@ -1,0 +1,36 @@
+package arm;
+
+import kha.input.Mouse;
+import armory.trait.internal.PhysicsWorld;
+
+// Using mouse events
+class PickEvent extends armory.Trait {
+
+	public function new() {
+		super();
+
+		notifyOnInit(function() {
+			Mouse.get().notify(onMouseDown, onMouseUp, onMouseMove, onMouseWheel);
+		});
+
+		notifyOnRemove(function() {
+			// Trait or its object is removed, remove event listeners
+			Mouse.get().remove(onMouseDown, onMouseUp, onMouseMove, onMouseWheel);
+		});
+	}
+
+	public function onMouseDown(button: Int, x: Int, y: Int) {
+		// Pick object at mouse coords
+		var rb = PhysicsWorld.active.pickClosest(x, y);
+		
+		// Check if picked object is our Cube
+		if (rb != null && rb.object.name == 'Cube') {
+			rb.object.transform.translate(0, 0, 1);
+			rb.syncTransform();
+		}
+	}
+
+	public function onMouseUp(button: Int, x: Int, y: Int) { }
+	public function onMouseMove(x: Int, y: Int, movementX: Int, movementY: Int) { }
+	public function onMouseWheel(delta: Int) { }
+}
