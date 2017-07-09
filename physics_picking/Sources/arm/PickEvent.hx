@@ -19,7 +19,7 @@ class PickEvent extends armory.Trait {
 		});
 	}
 
-	public function onMouseDown(button: Int, x: Int, y: Int) {
+	function onMouseDown(button: Int, x: Int, y: Int) {
 		// Pick object at mouse coords
 		var rb = PhysicsWorld.active.pickClosest(x, y);
 		
@@ -30,7 +30,7 @@ class PickEvent extends armory.Trait {
 		}
 	}
 
-	public function onMouseUp(button: Int, x: Int, y: Int) { }
-	public function onMouseMove(x: Int, y: Int, movementX: Int, movementY: Int) { }
-	public function onMouseWheel(delta: Int) { }
+	function onMouseUp(button: Int, x: Int, y: Int) { }
+	function onMouseMove(x: Int, y: Int, movementX: Int, movementY: Int) { }
+	function onMouseWheel(delta: Int) { }
 }
