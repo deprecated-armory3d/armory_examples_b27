@@ -12,7 +12,7 @@ class FireTrait extends armory.Trait {
         iron.Scene.active.spawnObject("Bullet", null, function(o:Object) {
             o.visible = true;
             object.transform.buildMatrix();
-            o.transform.loc.setFrom(object.transform.abs);
+            o.transform.loc.setFrom(object.transform.world);
 		    o.transform.buildMatrix();
 
             var rigidBody = o.getTrait(RigidBody);

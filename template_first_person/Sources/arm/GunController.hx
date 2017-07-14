@@ -38,9 +38,9 @@ class GunController extends Trait {
 	function shoot() {
 		// Spawn projectile
 		iron.Scene.active.spawnObject(projectileRef, null, function(o:Object) {
-			o.transform.loc.x = firePoint.absx();
-			o.transform.loc.y = firePoint.absy();
-			o.transform.loc.z = firePoint.absz();
+			o.transform.loc.x = firePoint.worldx();
+			o.transform.loc.y = firePoint.worldy();
+			o.transform.loc.z = firePoint.worldz();
 			// Apply force
 			var rb:RigidBody = o.getTrait(RigidBody);
 			rb.syncTransform();

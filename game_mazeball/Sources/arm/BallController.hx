@@ -30,8 +30,8 @@ class BallController extends Trait {
 		// Check distance from ball to finish
 		var t1 = object.transform;
 		var t2 = finish.transform;
-		v1.set(t1.absx(), t1.absy(), t1.absz());
-		v2.set(t2.absx(), t2.absy(), t2.absz());
+		v1.set(t1.worldx(), t1.worldy(), t1.worldz());
+		v2.set(t2.worldx(), t2.worldy(), t2.worldz());
 		v1.subvecs(v1, v2);
 		var dist = v1.length();
 		if (dist < 1) {
