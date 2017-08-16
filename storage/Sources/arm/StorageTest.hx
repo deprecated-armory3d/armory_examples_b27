@@ -13,7 +13,8 @@ class StorageTest extends armory.Trait {
 			if (data == null) return;
 
 			// First run - init integer variable named 'count'
-			if (data.count == null) {
+			var count:Dynamic = data.count;
+			if (count == null) {
 				data.count = 0;
 				// Init more variables as needed
 				// data.test1 = "String";
