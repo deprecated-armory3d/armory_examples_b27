@@ -7,7 +7,7 @@ class MyTrait extends armory.Trait {
 	// Property marked with @prop gets exposed in
 	// Blender - Properties - Object - Armory Traits panel
     @prop
-    var speed:Float;
+    var speed:Float = 0.1;
 
     public function new() {
         super();

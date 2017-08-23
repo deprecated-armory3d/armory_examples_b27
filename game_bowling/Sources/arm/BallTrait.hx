@@ -26,7 +26,7 @@ class BallTrait extends armory.Trait {
 			var tr = object.transform;
 
 			if (!fired) {
-				if (kb.started("space")) {
+				if (kb.started("x") || kb.started("space")) {
 					rb.applyImpulse(new Vec4(0, impulse, 0));
 					fired = true;
 				}
