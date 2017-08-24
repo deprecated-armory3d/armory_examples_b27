@@ -41,6 +41,7 @@ class GunController extends Trait {
 			o.transform.loc.x = firePoint.worldx();
 			o.transform.loc.y = firePoint.worldy();
 			o.transform.loc.z = firePoint.worldz();
+			o.transform.buildMatrix();
 			// Apply force
 			var rb:RigidBody = o.getTrait(RigidBody);
 			rb.syncTransform();
