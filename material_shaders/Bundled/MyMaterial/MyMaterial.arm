@@ -1,0 +1,40 @@
+{
+    "shader_datas": [
+        {
+            "contexts": [
+                {
+                    "compare_mode": "less",
+                    "constants": [
+                        {
+                            "link": "_worldViewProjectionMatrix",
+                            "name": "WVP",
+                            "type": "mat4"
+                        },
+                        {
+                            "link": "_time",
+                            "name": "time",
+                            "type": "float"
+                        }
+                    ],
+                    "cull_mode": "clockwise",
+                    "depth_write": true,
+                    "fragment_shader": "MyMaterial.frag",
+                    "name": "mesh",
+                    "texture_units": [],
+                    "vertex_shader": "MyMaterial.vert",
+                    "vertex_structure": [
+                        {
+                            "name": "pos",
+                            "size": 3
+                        },
+                        {
+                            "name": "nor",
+                            "size": 3
+                        }
+                    ]
+                }
+            ],
+            "name": "MyMaterial"
+        }
+    ]
+}
