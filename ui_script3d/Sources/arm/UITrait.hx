@@ -18,7 +18,7 @@ class UITrait extends armory.Trait {
 
         // Load font for UI labels
         kha.Assets.loadFont("droid_sans", function(f:kha.Font) {
-            ui = new Zui({font: f, autoNotifyInput: false, scaleFactor: 4});
+            ui = new Zui({font: f, autoNotifyInput: false});
             armory.Scene.active.notifyOnInit(sceneInit);
         });
     }
@@ -46,12 +46,12 @@ class UITrait extends armory.Trait {
             if (ui.button("Open") && !opened) {
                 // Gate object is animated in Blender
                 // Play gate 'open' animation
-                gate.animation.player.play('open');
+                gate.animation.play('open');
                 opened = true;
             }
             if (ui.button("Close") && opened) {
                 // And close..
-                gate.animation.player.play('close');
+                gate.animation.play('close');
                 opened = false;
             }
         }
