@@ -26,6 +26,7 @@ class UITrait extends armory.Trait {
     function sceneInit() {
         // Reference to gate object
         gate = armory.Scene.active.getChild('Gate');
+        gate.animation.pause();
 
         rt = kha.Image.createRenderTarget(uiWidth, uiHeight);
 
@@ -45,13 +46,13 @@ class UITrait extends armory.Trait {
             // Gate controll buttons
             if (ui.button("Open") && !opened) {
                 // Gate object is animated in Blender
-                // Play gate 'open' animation
-                gate.animation.play('open');
+                // Play GateOpen animation
+                gate.animation.play('GateOpen', function() { gate.animation.pause(); });
                 opened = true;
             }
             if (ui.button("Close") && opened) {
                 // And close..
-                gate.animation.play('close');
+                gate.animation.play('GateClose', function() { gate.animation.pause(); });
                 opened = false;
             }
         }
