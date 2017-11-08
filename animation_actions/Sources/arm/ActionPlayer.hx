@@ -18,6 +18,7 @@ class ActionPlayer extends armory.Trait {
 			else if (kb.started("4")) anim.play("Run-M");
 			else if (kb.started("5")) anim.play("Rest");
 			else if (kb.started("6")) anim.pause();
+			else if (kb.started("7")) anim.resume();
 		});
 	}
 
