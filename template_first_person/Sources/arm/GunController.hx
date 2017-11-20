@@ -8,7 +8,7 @@ import iron.system.Time;
 import iron.object.Object;
 import iron.object.Transform;
 import iron.object.CameraObject;
-import armory.trait.internal.RigidBody;
+import armory.trait.physics.RigidBody;
 
 @:keep
 class GunController extends Trait {

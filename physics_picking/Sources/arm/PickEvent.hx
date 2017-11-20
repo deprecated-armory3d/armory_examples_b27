@@ -1,7 +1,7 @@
 package arm;
 
 import kha.input.Mouse;
-import armory.trait.internal.PhysicsWorld;
+import armory.trait.physics.PhysicsWorld;
 
 // Using mouse events
 class PickEvent extends armory.Trait {

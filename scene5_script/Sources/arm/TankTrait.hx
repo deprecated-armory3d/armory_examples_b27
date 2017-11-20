@@ -1,6 +1,6 @@
 package arm;
 
-import armory.trait.internal.RigidBody;
+import armory.trait.physics.RigidBody;
 
 class TankTrait extends armory.Trait {
 

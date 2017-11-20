@@ -60,7 +60,7 @@ class TankTrait extends armory.Trait implements Entity implements Sync {
     }
 
     function syncRigidBody() {
-		var rigidBody = object.getTrait(armory.trait.internal.RigidBody);
+		var rigidBody = object.getTrait(armory.trait.physics.RigidBody);
 		if (rigidBody != null) rigidBody.syncTransform();
     }
 }

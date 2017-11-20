@@ -17,7 +17,7 @@ class FireTrait extends armory.Trait implements Entity implements Sync {
             o.transform.loc.setFrom(object.transform.world.getLoc());
 		    o.transform.buildMatrix();
 
-            var rigidBody = o.getTrait(armory.trait.internal.RigidBody);
+            var rigidBody = o.getTrait(armory.trait.physics.RigidBody);
             if (rigidBody != null) rigidBody.syncTransform();
 
             var vec = object.transform.look();

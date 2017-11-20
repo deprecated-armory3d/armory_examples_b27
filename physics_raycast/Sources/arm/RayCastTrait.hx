@@ -1,6 +1,6 @@
 package arm;
 
-import armory.trait.internal.PhysicsWorld;
+import armory.trait.physics.PhysicsWorld;
 
 class RayCastTrait extends armory.Trait {
 

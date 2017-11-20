@@ -77,7 +77,7 @@ class BoxGenerator extends armory.Trait {
 			var aabb = meshData.geom.aabb;
 			object.transform.setDimensions(aabb.x, aabb.y, aabb.z);
 			object.transform.set(Math.random() * 8 - 4, Math.random() * 8 - 4, 5);
-			object.addTrait(new armory.trait.internal.RigidBody());
+			object.addTrait(new armory.trait.physics.RigidBody());
 		}
 	}
 }

@@ -1,7 +1,7 @@
 package arm;
 
 import armory.system.Input;
-import armory.trait.internal.PhysicsWorld;
+import armory.trait.physics.PhysicsWorld;
 
 // This example shows how to JavaScript after clicking on a Cube object
 // Requires physics enabled and browser target

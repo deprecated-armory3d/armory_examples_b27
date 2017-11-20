@@ -1,7 +1,7 @@
 package arm;
 
 import iron.math.Vec4;
-import armory.trait.internal.RigidBody;
+import armory.trait.physics.RigidBody;
 
 class BallTrait extends armory.Trait {
 

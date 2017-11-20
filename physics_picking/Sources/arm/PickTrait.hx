@@ -1,7 +1,7 @@
 package arm;
 
 import armory.system.Input;
-import armory.trait.internal.PhysicsWorld;
+import armory.trait.physics.PhysicsWorld;
 
 class PickTrait extends armory.Trait {
 

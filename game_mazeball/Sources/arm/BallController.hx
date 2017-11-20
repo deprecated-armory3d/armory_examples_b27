@@ -4,7 +4,7 @@ import armory.Trait;
 import armory.Scene;
 import armory.object.Object;
 import armory.math.Vec4;
-import armory.trait.internal.RigidBody;
+import armory.trait.physics.RigidBody;
 
 @:keep
 class BallController extends Trait {
