@@ -1,10 +1,10 @@
 package arm;
 
-import armory.object.Object;
-import armory.system.Input;
+import iron.object.Object;
+import iron.system.Input;
 import zui.*;
 
-class UITrait extends armory.Trait {
+class UITrait extends iron.Trait {
     
     var ui:Zui;
     var rt:kha.Image; // Render target for UI
@@ -19,19 +19,19 @@ class UITrait extends armory.Trait {
         // Load font for UI labels
         kha.Assets.loadFont("droid_sans", function(f:kha.Font) {
             ui = new Zui({font: f, autoNotifyInput: false});
-            armory.Scene.active.notifyOnInit(sceneInit);
+            iron.Scene.active.notifyOnInit(sceneInit);
         });
     }
 
     function sceneInit() {
         // Reference to gate object
-        gate = armory.Scene.active.getChild('Gate');
+        gate = iron.Scene.active.getChild('Gate');
         gate.animation.pause();
 
         rt = kha.Image.createRenderTarget(uiWidth, uiHeight);
 
         // We will use empty texture slot in attached material to render UI
-        var mat:armory.data.MaterialData = cast(object, armory.object.MeshObject).materials[0];
+        var mat:iron.data.MaterialData = cast(object, iron.object.MeshObject).materials[0];
         mat.contexts[0].textures[0] = rt; // Override diffuse texture
 
         notifyOnRender(render);

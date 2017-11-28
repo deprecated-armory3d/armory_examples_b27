@@ -1,7 +1,7 @@
 package arm;
 
 @:keep
-class PrintFrame extends armory.Trait {
+class PrintFrame extends iron.Trait {
 
     var frameTime:Float;
     var lastTime:Float = 0;

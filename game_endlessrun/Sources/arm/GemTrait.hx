@@ -1,6 +1,6 @@
 package arm;
 
-class GemTrait extends armory.Trait {
+class GemTrait extends iron.Trait {
 
 	static var gemsCollected = 0;
 

@@ -1,6 +1,6 @@
 package arm;
 
-class MyTrait extends armory.Trait {
+class MyTrait extends iron.Trait {
     public function new() {
         super();
 
@@ -8,7 +8,7 @@ class MyTrait extends armory.Trait {
         // });
         
         notifyOnUpdate(function() {
-            object.transform.rotate(armory.math.Vec4.zAxis(), 0.01);
+            object.transform.rotate(iron.math.Vec4.zAxis(), 0.01);
         });
 
         // notifyOnRemove(function() {

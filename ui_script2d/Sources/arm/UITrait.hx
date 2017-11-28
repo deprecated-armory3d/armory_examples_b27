@@ -1,9 +1,9 @@
 package arm;
 
-import armory.object.Object;
+import iron.object.Object;
 import zui.*;
 
-class UITrait extends armory.Trait {
+class UITrait extends iron.Trait {
 
     var ui:Zui;
     var cube:Object;
@@ -16,14 +16,14 @@ class UITrait extends armory.Trait {
         // Load font for UI labels
         kha.Assets.loadFont("droid_sans", function(f:kha.Font) {
             ui = new Zui({font: f});
-            armory.Scene.active.notifyOnInit(sceneInit);
+            iron.Scene.active.notifyOnInit(sceneInit);
         });
     }
 
     function sceneInit() {
         // Store references to cube and plane objects
-        cube = armory.Scene.active.getChild("Cube");
-        plane = armory.Scene.active.getChild("Plane");
+        cube = iron.Scene.active.getChild("Cube");
+        plane = iron.Scene.active.getChild("Plane");
         notifyOnRender2D(render2D);
         notifyOnUpdate(update);
     }
@@ -64,7 +64,7 @@ class UITrait extends armory.Trait {
                     plane.visible = !plane.visible;
                 }
                 if (ui.button("Rotate Plane")) {
-                    plane.transform.rotate(armory.math.Vec4.zAxis(), Math.random() * 3.14);
+                    plane.transform.rotate(iron.math.Vec4.zAxis(), Math.random() * 3.14);
                 }
                 
                 ui.unindent();
@@ -82,7 +82,7 @@ class UITrait extends armory.Trait {
     function update() {
         // Translate cube location over time
         if (move) {
-            cube.transform.loc.x = Math.sin(armory.system.Time.time() * 2);
+            cube.transform.loc.x = Math.sin(iron.system.Time.time() * 2);
             cube.transform.dirty = true;
         }
     }

@@ -1,10 +1,10 @@
 package arm;
 
-import armory.object.Object;
-import armory.Scene;
-import armory.math.Quat;
+import iron.object.Object;
+import iron.Scene;
+import iron.math.Quat;
 
-class CameraTrait extends armory.Trait {
+class CameraTrait extends iron.Trait {
 	
 	var cube:Object;
 	

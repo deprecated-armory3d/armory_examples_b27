@@ -1,9 +1,9 @@
 package arm;
 
 import armory.trait.physics.RigidBody;
-import armory.object.Object;
+import iron.object.Object;
 
-class FireTrait extends armory.Trait {
+class FireTrait extends iron.Trait {
     public function new() {
         super();
     }

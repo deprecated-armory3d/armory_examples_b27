@@ -1,6 +1,6 @@
 package arm;
 
-class PlayerController extends armory.Trait {
+class PlayerController extends iron.Trait {
 	public function new() {
 		super();
 

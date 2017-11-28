@@ -1,6 +1,6 @@
 package arm;
 
-class SpawnTrait extends armory.Trait {
+class SpawnTrait extends iron.Trait {
 	public function new() {
 		super();
 

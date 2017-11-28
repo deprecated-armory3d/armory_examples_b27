@@ -2,7 +2,7 @@ package arm;
 
 import armory.trait.physics.PhysicsWorld;
 
-class RayCastTrait extends armory.Trait {
+class RayCastTrait extends iron.Trait {
 
     var q = new iron.math.Quat();
 

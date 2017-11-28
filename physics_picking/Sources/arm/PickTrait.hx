@@ -1,9 +1,9 @@
 package arm;
 
-import armory.system.Input;
+import iron.system.Input;
 import armory.trait.physics.PhysicsWorld;
 
-class PickTrait extends armory.Trait {
+class PickTrait extends iron.Trait {
 
 	public function new() {
 		super();

@@ -1,6 +1,6 @@
 package arm;
 
-class SessionTrait extends armory.Trait {
+class SessionTrait extends iron.Trait {
 
     public static var session:kha.network.Session = null;
 

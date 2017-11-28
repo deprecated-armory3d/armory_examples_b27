@@ -4,7 +4,7 @@ import kha.input.Mouse;
 import armory.trait.physics.PhysicsWorld;
 
 // Using mouse events
-class PickEvent extends armory.Trait {
+class PickEvent extends iron.Trait {
 
 	public function new() {
 		super();

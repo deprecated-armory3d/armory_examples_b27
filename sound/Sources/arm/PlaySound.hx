@@ -1,6 +1,6 @@
 package arm;
 
-class PlaySound extends armory.Trait {
+class PlaySound extends iron.Trait {
 	public function new() {
 		super();
 

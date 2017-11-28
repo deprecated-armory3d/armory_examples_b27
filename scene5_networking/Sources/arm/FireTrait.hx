@@ -2,9 +2,9 @@ package arm;
 
 import kha.network.Entity;
 import kha.network.Sync;
-import armory.object.Object;
+import iron.object.Object;
 
-class FireTrait extends armory.Trait implements Entity implements Sync {
+class FireTrait extends iron.Trait implements Entity implements Sync {
     public function new() {
         super();
     }

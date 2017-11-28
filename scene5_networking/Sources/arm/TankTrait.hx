@@ -3,7 +3,7 @@ package arm;
 import kha.network.Entity;
 import kha.network.Sync;
 
-class TankTrait extends armory.Trait implements Entity implements Sync {
+class TankTrait extends iron.Trait implements Entity implements Sync {
 
     static var q = new iron.math.Quat();
     var transform:iron.object.Transform;

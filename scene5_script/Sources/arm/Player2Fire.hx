@@ -1,6 +1,6 @@
 package arm;
 
-class Player2Fire extends armory.Trait {
+class Player2Fire extends iron.Trait {
     public function new() {
         super();
         

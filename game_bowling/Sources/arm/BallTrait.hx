@@ -3,7 +3,7 @@ package arm;
 import iron.math.Vec4;
 import armory.trait.physics.RigidBody;
 
-class BallTrait extends armory.Trait {
+class BallTrait extends iron.Trait {
 
 	@prop
 	var impulse = 65.0;

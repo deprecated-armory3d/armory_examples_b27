@@ -4,7 +4,7 @@ import iron.system.Tween;
 import iron.math.Vec4;
 import iron.math.Quat;
 
-class MyTrait extends armory.Trait {
+class MyTrait extends iron.Trait {
 
     public function new() {
         super();

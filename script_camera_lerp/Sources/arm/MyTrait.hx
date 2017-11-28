@@ -1,10 +1,10 @@
 package arm;
 
-import armory.system.Input;
-import armory.math.Vec4;
-import armory.system.Time;
+import iron.system.Input;
+import iron.math.Vec4;
+import iron.system.Time;
 
-class MyTrait extends armory.Trait {
+class MyTrait extends iron.Trait {
 	public function new() {
 		super();
 

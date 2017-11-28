@@ -1,6 +1,6 @@
 package arm;
 
-class Config extends armory.Trait {
+class Config extends iron.Trait {
 
     @prop public var speed:Float = 0.1;
     @prop public var text:String;

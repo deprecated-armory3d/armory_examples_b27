@@ -2,7 +2,7 @@ package arm;
 
 import iron.math.Vec4;
 
-class MyTrait extends armory.Trait {
+class MyTrait extends iron.Trait {
 
 	// Property marked with @prop gets exposed in
 	// Blender - Properties - Object - Armory Traits panel

@@ -1,6 +1,6 @@
 package arm;
 
-class SceneBuilder extends armory.Trait {
+class SceneBuilder extends iron.Trait {
 
 	var dist = 0.0;
 	var tileNum = 0;

@@ -1,6 +1,6 @@
 package arm;
 
-class MyTrait extends armory.Trait {
+class MyTrait extends iron.Trait {
 	public function new() {
 		super();
 		armory.system.Event.add("button", onEvent);

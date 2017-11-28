@@ -1,6 +1,6 @@
 package arm;
 
-class TransformTest extends armory.Trait {
+class TransformTest extends iron.Trait {
     public function new() {
         super();
 

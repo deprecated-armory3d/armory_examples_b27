@@ -2,7 +2,7 @@ package arm;
 
 import iron.math.Vec4;
 
-class SensorTrait extends armory.Trait {
+class SensorTrait extends iron.Trait {
 	public function new() {
 		super();
 

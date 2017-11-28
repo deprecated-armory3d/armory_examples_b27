@@ -1,12 +1,12 @@
 package arm;
 
-import armory.system.Input;
+import iron.system.Input;
 import armory.trait.physics.PhysicsWorld;
 
 // This example shows how to JavaScript after clicking on a Cube object
 // Requires physics enabled and browser target
 
-class HtmlAccess extends armory.Trait {
+class HtmlAccess extends iron.Trait {
 
 	public function new() {
 		super();

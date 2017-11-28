@@ -1,14 +1,14 @@
 package arm;
 
-import armory.Scene;
-import armory.data.SceneFormat;
-import armory.data.Data;
-import armory.data.MeshData;
-import armory.data.MaterialData;
-import armory.system.Input;
+import iron.Scene;
+import iron.data.SceneFormat;
+import iron.data.Data;
+import iron.data.MeshData;
+import iron.data.MaterialData;
+import iron.system.Input;
 
 @:keep
-class BoxGenerator extends armory.Trait {
+class BoxGenerator extends iron.Trait {
 
 	var meshData:MeshData;
 	var materials:haxe.ds.Vector<MaterialData>;

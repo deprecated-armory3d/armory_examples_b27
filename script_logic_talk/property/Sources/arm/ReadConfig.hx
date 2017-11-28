@@ -1,6 +1,6 @@
 package arm;
 
-class ReadConfig extends armory.Trait {
+class ReadConfig extends iron.Trait {
 	public function new() {
 		super();
 

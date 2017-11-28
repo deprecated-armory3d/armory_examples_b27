@@ -1,6 +1,6 @@
 package arm;
 
-class AnimControl extends armory.Trait {
+class AnimControl extends iron.Trait {
 
 	var tilesheet:iron.object.Tilesheet;
 

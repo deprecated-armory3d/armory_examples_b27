@@ -1,6 +1,6 @@
 package arm;
 
-class PinTrait extends armory.Trait {
+class PinTrait extends iron.Trait {
 
 	public static var pinsRemoved = 0;
 

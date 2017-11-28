@@ -1,6 +1,6 @@
 package arm;
 
-class ActionPlayer extends armory.Trait {
+class ActionPlayer extends iron.Trait {
 	
 	function getAnim() {
 		// Trait placed on mesh object

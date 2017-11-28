@@ -1,6 +1,6 @@
 package arm;
 
-class PinSpawner extends armory.Trait {
+class PinSpawner extends iron.Trait {
 	public function new() {
 		super();
 

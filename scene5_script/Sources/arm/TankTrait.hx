@@ -2,7 +2,7 @@ package arm;
 
 import armory.trait.physics.RigidBody;
 
-class TankTrait extends armory.Trait {
+class TankTrait extends iron.Trait {
 
     static var q = new iron.math.Quat();
     var transform:iron.object.Transform;

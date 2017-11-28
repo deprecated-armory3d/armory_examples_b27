@@ -4,7 +4,7 @@ package arm;
 import armory.trait.internal.DebugDraw;
 #end
 
-class MyTrait extends armory.Trait {
+class MyTrait extends iron.Trait {
 	public function new() {
 		super();
 

@@ -2,7 +2,7 @@ package arm;
 
 import iron.system.Storage;
 
-class StorageTest extends armory.Trait {
+class StorageTest extends iron.Trait {
 	public function new() {
 		super();
 

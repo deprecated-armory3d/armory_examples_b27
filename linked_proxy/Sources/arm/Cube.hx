@@ -1,8 +1,8 @@
 package arm;
 
-import armory.math.Vec4;
+import iron.math.Vec4;
 
-class Cube extends armory.Trait {
+class Cube extends iron.Trait {
 
 	@prop
 	var speed:Float = 0.5;

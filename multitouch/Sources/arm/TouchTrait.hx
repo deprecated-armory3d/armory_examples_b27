@@ -3,7 +3,7 @@ package arm;
 import iron.system.Time;
 import iron.math.Vec4;
 
-class TouchTrait extends armory.Trait {
+class TouchTrait extends iron.Trait {
 
 	var touches = [false, false, false];
 
