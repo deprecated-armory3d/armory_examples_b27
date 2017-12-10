@@ -15,7 +15,7 @@ class GemTrait extends iron.Trait {
 			if (player == null) player = iron.Scene.active.getChild("Player");
 			var w1 = object.transform.world;
 			var w2 = player.transform.world;
-			var d = iron.math.Vec4.distance3d(w1.getLoc(), w2.getLoc());
+			var d = iron.math.Vec4.distance(w1.getLoc(), w2.getLoc());
 			
 			// Collect gem
 			if (d < 0.6) {
