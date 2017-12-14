@@ -31,7 +31,7 @@ class GunController extends Trait {
 		});
 		
 		notifyOnUpdate(function() {
-			if (Input.getKeyboard().started("f")) shoot();
+			if (Input.getMouse().started("left")) shoot();
 		});
 	}
 
