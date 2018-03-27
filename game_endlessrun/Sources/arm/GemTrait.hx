@@ -23,8 +23,8 @@ class GemTrait extends iron.Trait {
 				object.remove();
 
 				// Update UI
-				// var canvas = iron.Scene.active.getTrait(armory.trait.internal.CanvasScript);
-				// canvas.getElement("Score").text = gemsCollected + "";
+				var canvas = iron.Scene.active.getTrait(armory.trait.internal.CanvasScript);
+				canvas.getElement("Score").text = gemsCollected + "";
 			}
 		});
 	}

@@ -2,7 +2,6 @@ package arm;
 
 import iron.object.BoneAnimation;
 
-// Do not use yet - WIP
 // Moving a bone - inverse kinematics
 class MoveBoneIK extends armory.Trait {
 
