@@ -1,3 +1,3 @@
-# Armory Examples
+# armory_examples
 
-Essential examples to accompany Armory SDK. Check out the [manual](http://armory3d.org/manual/).
+Examples to accompany Armory SDK. Check out the [manual](http://armory3d.org/manual/).
