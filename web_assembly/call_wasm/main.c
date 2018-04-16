@@ -2,5 +2,5 @@
 
 WASM_EXPORT
 float test() {
-  return 0.01;
+  return 0.01f;
 }
