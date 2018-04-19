@@ -3,10 +3,10 @@ package arm;
 import iron.system.Input;
 import armory.trait.physics.PhysicsWorld;
 
-// This example shows how to JavaScript after clicking on a Cube object
+// This example shows how to call JavaScript after clicking on a Cube object
 // Requires physics enabled and browser target
 
-class HtmlAccess extends iron.Trait {
+class CallJS extends iron.Trait {
 
 	public function new() {
 		super();
@@ -22,10 +22,7 @@ class HtmlAccess extends iron.Trait {
             // Check if picked object is our Cube
             if (rb != null && rb.object.name == 'Cube') {
 
-                // We could do this using Haxe externs,
-                // to keep things familiar we will inject raw JS code
-                // Using this we can manipulate html page that we are running in
-                // or send and retrieve events from the outside
+                // Raw JS calls
                 untyped __js__('document.title = "Cube clicked!"');
                 untyped __js__('console.log("Testing..");');
             }
