@@ -4,7 +4,7 @@ import iron.object.BoneAnimation;
 import iron.math.Mat4;
 
 // Moving a bone - forward kinematics
-class MoveBoneFK extends armory.Trait {
+class MoveBoneFK extends iron.Trait {
 
 	public function new() {
 		super();
