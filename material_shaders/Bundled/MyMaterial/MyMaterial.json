@@ -14,6 +14,11 @@
                             "link": "_time",
                             "name": "time",
                             "type": "float"
+                        },
+                        {
+                            "link": "myParam",
+                            "name": "myParam",
+                            "type": "float"
                         }
                     ],
                     "cull_mode": "clockwise",
