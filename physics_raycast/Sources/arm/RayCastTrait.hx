@@ -17,7 +17,7 @@ class RayCastTrait extends iron.Trait {
                 var physics = PhysicsWorld.active;
 
                 // Start from cone location
-                var from = object.transform.world;
+                var from = object.transform.world.getLoc();
 
                 // Cast ray in the direction cone points to
                 var to = object.transform.look();
