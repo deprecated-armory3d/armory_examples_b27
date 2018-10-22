@@ -6,11 +6,11 @@ class TestNode extends LogicNode {
 		super(tree);
 	}
 
-	override function run() {
+	override function run(from:Int) {
 		// Logic for this node
 		trace("Hello, World!");
 
 		// Execute next action linked to this node
-		super.run();
+		runOutput(0);
 	}
 }
