@@ -17,7 +17,7 @@ class UITrait extends iron.Trait {
         super();
 
         // Load font for UI labels
-        kha.Assets.loadFont("droid_sans", function(f:kha.Font) {
+        iron.data.Data.getFont("font_default.ttf", function(f:kha.Font) {
             ui = new Zui({font: f, autoNotifyInput: false});
             iron.Scene.active.notifyOnInit(sceneInit);
         });
