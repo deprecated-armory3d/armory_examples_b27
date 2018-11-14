@@ -4,7 +4,7 @@ import iron.Scene;
 import iron.data.Data;
 import armory.trait.internal.CanvasScript;
 
-class LoadFile extends iron.Trait {
+class ReadFile extends iron.Trait {
 	public function new() {
 		super();
 
